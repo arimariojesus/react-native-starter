@@ -7,8 +7,8 @@ export function HomeScreen() {
     <S.HomeContainer>
       <Text preset="heading">Heading</Text>
       <Text preset="subheading">Subheading</Text>
-      <Text preset="bold">Bold</Text>
       <Text preset="caption">Caption</Text>
+      <Text preset="bold">Bold</Text>
       <Text preset="default">Default</Text>
     </S.HomeContainer>
   );
