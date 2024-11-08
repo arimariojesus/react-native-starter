@@ -14,4 +14,4 @@ export const DEFAULT_THEME = {
   spacings,
   radii,
   borderWidths
-};
+} as const;

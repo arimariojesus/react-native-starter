@@ -8,6 +8,7 @@ export const fontsSizes = {
   18: 18,
   20: 20,
   24: 24,
+  36: 36,
   40: 40,
   52: 52
-};
+} as const;

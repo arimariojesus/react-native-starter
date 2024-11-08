@@ -1,9 +1,25 @@
+import {
+  Poppins_300Light as poppinsLight,
+  Poppins_400Regular as poppinsRegular,
+  Poppins_500Medium as poppinsMedium,
+  Poppins_600SemiBold as poppinsSemiBold,
+  Poppins_700Bold as poppinsBold
+} from '@expo-google-fonts/poppins';
+
+export const fontsToLoad = {
+  poppinsLight,
+  poppinsRegular,
+  poppinsMedium,
+  poppinsSemiBold,
+  poppinsBold
+};
+
 export const fontFamily = {
   poppins: {
-    300: 'Poppins_300Light',
-    400: 'Poppins_400Regular',
-    500: 'Poppins_500Medium',
-    600: 'Poppins_600SemiBold',
-    700: 'Poppins_700Bold'
+    light: 'poppinsLight',
+    regular: 'poppinsRegular',
+    medium: 'poppinsMedium',
+    semibold: 'poppinsSemiBold',
+    bold: 'poppinsBold'
   }
-};
+} as const;
