@@ -1,6 +1,6 @@
 {
   "name": "react-native-starter",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
@@ -34,5 +34,26 @@
     "prettier": "^3.3.3",
     "typescript": "~5.3.3"
   },
-  "private": true
+  "description": "A simples Expo/React Native template with TypeScript, ESLint, Prettier and React Navigation.",
+  "keywords": [
+    "expo",
+    "template",
+    "expo-template",
+    "react-native",
+    "typescript",
+    "eslint",
+    "prettier",
+    "react-native-template",
+    "react-navigation"
+  ],
+  "homepage": "https://github.com/arimariojesus/react-native-starter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arimariojesus/react-native-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arimariojesus/react-native-starter/issues"
+  },
+  "author": "Arimário Jesus",
+  "license": "MIT"
 }
