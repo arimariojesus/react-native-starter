@@ -3,8 +3,8 @@ import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
 import { useFonts } from '@expo-google-fonts/poppins';
 
-import { HomeScreen } from '@/screens/Home';
 import { fontsToLoad } from '@/styles/fontFamily';
+import Routes from '@/routes';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -24,7 +24,7 @@ export default function App() {
   return (
     <>
       <StatusBar style="auto" />
-      <HomeScreen />
+      <Routes />
     </>
   );
 }

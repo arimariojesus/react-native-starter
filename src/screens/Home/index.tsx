@@ -1,15 +1,22 @@
+import { Button } from 'react-native';
+
 import { Text } from '@/components/Text';
+import { RootStackScreenProps } from '@/routes/types';
 
 import * as S from './styles';
 
-export function HomeScreen() {
+type HomeScreenProps = RootStackScreenProps<'Home'>;
+
+export function HomeScreen({ navigation }: HomeScreenProps) {
+  const handleTypographyPress = () => {
+    navigation.navigate('Typography');
+  };
+
   return (
     <S.HomeContainer>
-      <Text preset="heading">Heading</Text>
-      <Text preset="subheading">Subheading</Text>
-      <Text preset="caption">Caption</Text>
-      <Text preset="bold">Bold</Text>
-      <Text preset="default">Default</Text>
+      <Text preset="heading">Hello World</Text>
+
+      <Button onPress={handleTypographyPress} title="Typography" />
     </S.HomeContainer>
   );
 }
