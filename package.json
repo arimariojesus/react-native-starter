@@ -1,5 +1,5 @@
 {
-  "name": "react-native-starter",
+  "name": "@arijesus/react-native-starter",
   "version": "0.0.1",
   "main": "expo/AppEntry.js",
   "scripts": {
