@@ -49,7 +49,7 @@
   "homepage": "https://github.com/arimariojesus/react-native-starter",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arimariojesus/react-native-starter.git"
+    "url": "git+https://github.com/arimariojesus/react-native-starter.git"
   },
   "bugs": {
     "url": "https://github.com/arimariojesus/react-native-starter/issues"
