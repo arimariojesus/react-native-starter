@@ -1,7 +1,6 @@
 import { Button } from 'react-native';
 
-import { Box } from '@/components/core';
-import { Text } from '@/components/Text';
+import { Box, Text } from '@/components/core';
 import { RootStackScreenProps } from '@/routes/types';
 
 import * as S from './styles';

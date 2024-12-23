@@ -9,21 +9,20 @@ import { CustomStyleProps } from '@/styles/types';
 
 export interface BoxProps extends CustomStyleProps, ViewProps {}
 
-export const Box = forwardRef<View, BoxProps>(
-  ({ style, ...others }: BoxProps, ref) => {
-    const { styleProps, remainingProps } = extractStyleProps(others);
-    const parsedStyleProps = parseStyleProps({
-      styleProps,
-      theme: DEFAULT_THEME, // TODO: get theme from context
-      data: STYlE_PROPS_DATA
-    });
+export const Box = forwardRef<View, BoxProps>((props, ref) => {
+  const { style: styleOverride, ...others } = props;
+  const { styleProps, remainingProps } = extractStyleProps(others);
+  const parsedStyleProps = parseStyleProps({
+    styleProps,
+    theme: DEFAULT_THEME, // TODO: get theme from context
+    data: STYlE_PROPS_DATA
+  });
 
-    const mergedStyles = [parsedStyleProps.styles, style];
-    const props = {
-      style: mergedStyles,
-      ...remainingProps
-    };
+  const mergedStyles = [parsedStyleProps.styles, styleOverride];
+  const mergedProps = {
+    style: mergedStyles,
+    ...remainingProps
+  };
 
-    return <View {...props} ref={ref} />;
-  }
-);
+  return <View {...mergedProps} ref={ref} />;
+});
