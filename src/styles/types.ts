@@ -39,26 +39,6 @@ export type BorderWidths = PathsOf<Theme['borderWidths']>;
 export type Radii = PathsOf<Theme['radii']>;
 export type Spacings = PathsOf<Theme['spacings']>;
 
-export type UniqueTextSyles = {
-  color?: Colors;
-  weight?: FontWeights;
-  size?: FontSizes;
-  fontFamily?: FontFamily;
-  align?: TextStyle['textAlign'];
-};
-
-export type UniqueViewStyles = {
-  backgroundColor?: Colors;
-  borderWidth?: BorderWidths;
-  borderRadius?: Radii;
-  padding?: Spacings;
-  margin?: Spacings;
-  width?: Spacings;
-  height?: Spacings;
-  justifyContent?: ViewStyle['justifyContent'];
-  alignItems?: ViewStyle['alignItems'];
-};
-
 export interface CustomStyleProps {
   /** Margin, theme key: theme.spacing */
   m?: Spacings;
@@ -116,6 +96,8 @@ export interface CustomStyleProps {
   bg?: Colors;
   /** Color */
   c?: Colors;
+  color?: Colors;
+  /** Opacity */
   opacity?: StyleProps['opacity'];
 
   /** FontFamily, theme key: theme.fontFamily */

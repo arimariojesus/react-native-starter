@@ -38,6 +38,7 @@ export const STYlE_PROPS_DATA = {
   br: { type: 'radii', property: 'borderRadius' },
   bg: { type: 'colors', property: 'backgroundColor' },
   c: { type: 'colors', property: 'color' },
+  color: { type: 'colors', property: 'color' },
   opacity: { type: 'identity', property: 'opacity' },
 
   ff: { type: 'fontFamily', property: 'fontFamily' },
