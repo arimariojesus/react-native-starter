@@ -2,7 +2,12 @@ import * as React from 'react';
 import { Text as RNText, StyleProp, TextStyle } from 'react-native';
 
 import { getTextUnitStyles } from '@/styles/helpers';
-import type { Colors, FontFamily, Sizes, Weights } from '@/styles/types';
+import type {
+  Colors,
+  FontFamily,
+  FontSizes,
+  FontWeights
+} from '@/styles/types';
 import { type TextPresets, presets } from './presets';
 
 import * as S from './styles';
@@ -12,8 +17,8 @@ type TextRef = React.ElementRef<typeof RNText>;
 
 interface TextProps extends RNTextProps {
   color?: Colors;
-  weight?: Weights;
-  size?: Sizes;
+  weight?: FontWeights;
+  size?: FontSizes;
   fontFamily?: FontFamily;
   align?: TextStyle['textAlign'];
   preset?: TextPresets;

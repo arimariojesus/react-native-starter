@@ -1,6 +1,6 @@
 import { Text as RNText } from 'react-native';
 
-import { styled } from '@/styles/helpers';
+import { styled } from '@/styles/style-api';
 
 export const Text = styled(RNText)(({ theme }) => ({
   fontSize: theme.fontsSizes[14],

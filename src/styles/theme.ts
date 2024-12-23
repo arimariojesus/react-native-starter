@@ -1,11 +1,31 @@
-import { borderWidths } from './borderWidths';
 import { colors } from './colors';
-import { fontFamily } from './fontFamily';
 import { fontsSizes } from './fontsSizes';
 import { fontsWeights } from './fontsWeights';
-import { radii } from './radii';
+import { fontFamily } from './fontFamily';
 import { spacings } from './spacings';
+import { radii } from './radii';
+import { borderWidths } from './borderWidths';
 
+export type StylePropType =
+  | 'colors'
+  | 'fontsSizes'
+  | 'fontsWeights'
+  | 'fontFamily'
+  | 'spacings'
+  | 'radii'
+  | 'borderWidths';
+
+export type CoreTheme = {
+  colors: typeof colors;
+  fontsSizes: typeof fontsSizes;
+  fontsWeights: typeof fontsWeights;
+  fontFamily: typeof fontFamily;
+  spacings: typeof spacings;
+  radii: typeof radii;
+  borderWidths: typeof borderWidths;
+};
+
+// TODO: add sizes values
 export const DEFAULT_THEME = {
   colors,
   fontsSizes,
@@ -14,4 +34,4 @@ export const DEFAULT_THEME = {
   spacings,
   radii,
   borderWidths
-} as const;
+} as const satisfies CoreTheme;

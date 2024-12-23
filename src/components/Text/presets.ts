@@ -1,5 +1,6 @@
-import { createStyle } from '@/styles/helpers';
 import { StyleProp, TextStyle } from 'react-native';
+
+import { createStyle } from '@/styles/style-api';
 
 export type TextPresets =
   | 'default'

@@ -1,6 +1,6 @@
 import { View } from 'react-native';
 
-import { styled } from '@/styles/helpers';
+import { styled } from '@/styles/style-api';
 
 export const HomeContainer = styled(View)(({ theme }) => ({
   alignItems: 'center',
