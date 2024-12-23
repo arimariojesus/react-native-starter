@@ -8,7 +8,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "eslint .",
-    "check": "npx expo-doctor@latest",
+    "doctor": "npx expo-doctor@latest",
     "upgrade": "npx expo install --fix"
   },
   "dependencies": {
