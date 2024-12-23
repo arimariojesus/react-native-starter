@@ -133,5 +133,11 @@ export function extractStyleProps<T extends Record<string, unknown>>(
     flexDir
   };
 
+  for (const key in styleProps) {
+    if ((styleProps as Record<string, unknown>)[key] === undefined) {
+      delete (styleProps as Record<string, unknown>)[key];
+    }
+  }
+
   return { styleProps, remainingProps: rest };
 }
