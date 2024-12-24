@@ -36,6 +36,7 @@ export function extractStyleProps<T extends Record<string, unknown>>(
     br,
     bg,
     c,
+    color,
     opacity,
 
     ff,
@@ -100,6 +101,7 @@ export function extractStyleProps<T extends Record<string, unknown>>(
     br,
     bg,
     c,
+    color,
     opacity,
 
     ff,

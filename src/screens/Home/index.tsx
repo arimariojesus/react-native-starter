@@ -1,6 +1,6 @@
 import { Button } from 'react-native';
 
-import { Box, Text } from '@/components/core';
+import { Box, Stack, Text } from '@/components/core';
 import { RootStackScreenProps } from '@/routes/types';
 
 import * as S from './styles';
@@ -12,15 +12,16 @@ export function HomeScreen({ navigation }: HomeScreenProps) {
     navigation.navigate('Typography');
   };
 
+  const handleStackPress = () => {
+    navigation.navigate('Stack');
+  };
+
   return (
     <S.HomeContainer>
       <Text preset="heading">Hello World</Text>
 
       <Button onPress={handleTypographyPress} title="Typography" />
-
-      <Box p="56" bg="danger" br="12">
-        <Text color="text.inverse">Box Component</Text>
-      </Box>
+      <Button onPress={handleStackPress} title="Stack" />
     </S.HomeContainer>
   );
 }
