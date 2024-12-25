@@ -6,7 +6,6 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web",
     "lint": "eslint .",
     "doctor": "npx expo-doctor@latest",
     "upgrade": "npx expo install --fix"
