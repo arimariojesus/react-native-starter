@@ -8,6 +8,7 @@ module.exports = {
     'import/order': [
       'warn',
       {
+        'newlines-between': 'always',
         groups: [
           ['builtin', 'external'],
           'internal',
