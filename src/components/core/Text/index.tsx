@@ -10,6 +10,7 @@ import { STYlE_PROPS_DATA } from '@/styles/data';
 import { extractStyleProps, parseStyleProps } from '@/styles/style-props';
 import { DEFAULT_THEME } from '@/styles/theme';
 import { CustomStyleProps } from '@/styles/types';
+
 import { type TextPresets, presets } from './presets';
 import * as S from './styles';
 

@@ -18,7 +18,12 @@ module.exports = {
         pathGroups: [
           {
             pattern: 'react',
-            group: 'builtin',
+            group: 'external',
+            position: 'before'
+          },
+          {
+            pattern: 'react-native',
+            group: 'external',
             position: 'before'
           },
           {
@@ -27,6 +32,7 @@ module.exports = {
             position: 'before'
           }
         ],
+        distinctGroup: false,
         pathGroupsExcludedImportTypes: ['type'],
         alphabetize: {
           order: 'asc',

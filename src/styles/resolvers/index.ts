@@ -1,4 +1,5 @@
 import type { StylePropType } from '@/styles/theme';
+
 import { borderWidthsResolver } from './borderWidthsResolver';
 import { colorsResolver } from './colorsResolver';
 import { fontFamilyResolver } from './fontFamilyResolver';
