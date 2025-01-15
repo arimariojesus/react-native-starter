@@ -1,10 +1,10 @@
+import { borderWidths } from './borderWidths';
 import { colors } from './colors';
+import { fontFamily } from './fontFamily';
 import { fontsSizes } from './fontsSizes';
 import { fontsWeights } from './fontsWeights';
-import { fontFamily } from './fontFamily';
-import { spacings } from './spacings';
 import { radii } from './radii';
-import { borderWidths } from './borderWidths';
+import { spacings } from './spacings';
 
 export type StylePropType =
   | 'colors'

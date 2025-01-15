@@ -1,12 +1,12 @@
 import type { StylePropType } from '@/styles/theme';
-import { colorsResolver } from './colorsResolver';
-import { fontsWeightsResolver } from './fontsWeightsResolver';
-import { fontsSizesResolver } from './fontsSizesResolver';
-import { fontFamilyResolver } from './fontFamilyResolver';
 import { borderWidthsResolver } from './borderWidthsResolver';
+import { colorsResolver } from './colorsResolver';
+import { fontFamilyResolver } from './fontFamilyResolver';
+import { fontsSizesResolver } from './fontsSizesResolver';
+import { fontsWeightsResolver } from './fontsWeightsResolver';
+import { identityResolver } from './identityResolver';
 import { radiiResolver } from './radiiResolver';
 import { spacingsResolver } from './spacingsResolver';
-import { identityResolver } from './identityResolver';
 
 export const resolvers = {
   colors: colorsResolver,

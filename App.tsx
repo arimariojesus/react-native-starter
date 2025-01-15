@@ -1,10 +1,10 @@
-import { useEffect } from 'react';
-import { StatusBar } from 'expo-status-bar';
-import * as SplashScreen from 'expo-splash-screen';
+import React, { useEffect } from 'react';
 import { useFonts } from '@expo-google-fonts/poppins';
+import * as SplashScreen from 'expo-splash-screen';
+import { StatusBar } from 'expo-status-bar';
 
-import { fontsToLoad } from '@/styles/fontFamily';
 import Routes from '@/routes';
+import { fontsToLoad } from '@/styles/fontFamily';
 
 SplashScreen.preventAutoHideAsync();
 
