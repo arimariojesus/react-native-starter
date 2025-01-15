@@ -4,6 +4,34 @@ module.exports = {
   plugins: ['prettier'],
   rules: {
     'react/display-name': 'off',
-    'prettier/prettier': 'warn'
+    'prettier/prettier': 'warn',
+    'import/order': [
+      'warn',
+      {
+        groups: [
+          ['builtin', 'external'],
+          'internal',
+          ['parent', 'sibling'],
+          'index'
+        ],
+        pathGroups: [
+          {
+            pattern: 'react',
+            group: 'builtin',
+            position: 'before'
+          },
+          {
+            pattern: '@/**',
+            group: 'internal',
+            position: 'before'
+          }
+        ],
+        pathGroupsExcludedImportTypes: ['type'],
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true
+        }
+      }
+    ]
   }
 };
