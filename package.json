@@ -9,8 +9,11 @@
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "lint:errors": "npm run lint -- --quiet",
+    "precommit:lint": "npm run lint -- --cache",
+    "precommit:format": "prettier $(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g') --write --ignore-unknown",
     "doctor": "npx expo-doctor@latest",
-    "upgrade": "npx expo install --fix"
+    "upgrade": "npx expo install --fix",
+    "prepare": "husky"
   },
   "dependencies": {
     "@expo-google-fonts/poppins": "^0.2.3",
@@ -34,8 +37,16 @@
     "eslint-config-expo": "~8.0.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.1",
     "prettier": "^3.3.3",
     "typescript": "~5.3.3"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "npm run precommit:format",
+      "npm run precommit:lint"
+    ]
   },
   "description": "A simples Expo/React Native template with TypeScript, ESLint, Prettier and React Navigation.",
   "keywords": [
