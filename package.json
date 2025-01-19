@@ -13,7 +13,8 @@
     "precommit:format": "prettier $(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g') --write --ignore-unknown",
     "doctor": "npx expo-doctor@latest",
     "upgrade": "npx expo install --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "commitlint": "commitlint --edit"
   },
   "dependencies": {
     "@expo-google-fonts/poppins": "^0.2.3",
@@ -31,6 +32,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
     "@types/lodash.get": "^4.4.9",
     "@types/react": "~18.3.12",
     "eslint": "^8.57.0",
