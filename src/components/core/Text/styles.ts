@@ -4,6 +4,6 @@ import { styled } from '@/styles/style-api';
 
 export const Text = styled(RNText)(({ theme }) => ({
   fontSize: theme.fontsSizes[14],
-  fontFamily: theme.fontFamily.poppins.regular,
+  fontFamily: theme.fontFamily.primary.regular,
   color: theme.colors.text.primary
 }));

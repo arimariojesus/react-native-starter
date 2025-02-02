@@ -15,7 +15,7 @@ export const fontsToLoad = {
 };
 
 export const fontFamily = {
-  poppins: {
+  primary: {
     light: 'poppinsLight',
     regular: 'poppinsRegular',
     medium: 'poppinsMedium',

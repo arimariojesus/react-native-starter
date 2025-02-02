@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useFonts } from '@expo-google-fonts/poppins';
+import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 
