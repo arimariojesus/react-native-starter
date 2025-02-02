@@ -68,6 +68,10 @@ export function extractStyleProps<T extends Record<string, unknown>>(
     display,
     flex,
     flexDir,
+    flexWrap,
+    justifyContent,
+    alignItems,
+    gap,
     ...rest
   } = others;
 
@@ -132,7 +136,11 @@ export function extractStyleProps<T extends Record<string, unknown>>(
 
     display,
     flex,
-    flexDir
+    flexDir,
+    flexWrap,
+    justifyContent,
+    alignItems,
+    gap
   };
 
   for (const key in styleProps) {
