@@ -1,5 +1,5 @@
 // Depending on the need we can use `rem` using a tool to improve responsiveness.
-export const fontsSizes = {
+export const fontSizes = {
   8: 8,
   10: 10,
   12: 12,

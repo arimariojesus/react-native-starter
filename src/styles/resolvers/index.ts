@@ -3,7 +3,7 @@ import type { StylePropType } from '@/styles/theme';
 import { borderWidthsResolver } from './borderWidthsResolver';
 import { colorsResolver } from './colorsResolver';
 import { fontFamilyResolver } from './fontFamilyResolver';
-import { fontsSizesResolver } from './fontsSizesResolver';
+import { fontSizesResolver } from './fontSizesResolver';
 import { fontsWeightsResolver } from './fontsWeightsResolver';
 import { identityResolver } from './identityResolver';
 import { radiiResolver } from './radiiResolver';
@@ -12,7 +12,7 @@ import { spacingsResolver } from './spacingsResolver';
 export const resolvers = {
   colors: colorsResolver,
   fontsWeights: fontsWeightsResolver,
-  fontsSizes: fontsSizesResolver,
+  fontSizes: fontSizesResolver,
   fontFamily: fontFamilyResolver,
   borderWidths: borderWidthsResolver,
   radii: radiiResolver,

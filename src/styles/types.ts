@@ -33,7 +33,7 @@ export type StylesFunctionProps = {
 // TODO: add Sizes type
 export type Colors = PathsOf<Theme['colors']>;
 export type FontWeights = PathsOf<Theme['fontsWeights']>;
-export type FontSizes = PathsOf<Theme['fontsSizes']>;
+export type FontSizes = PathsOf<Theme['fontSizes']>;
 export type FontFamily = PathsOf<Theme['fontFamily']>;
 export type BorderWidths = PathsOf<Theme['borderWidths']>;
 export type Radii = PathsOf<Theme['radii']>;

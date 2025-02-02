@@ -11,7 +11,7 @@ export type TextPresets =
 
 export const baseTextStyles = createStyle(({ theme }) => ({
   fontFamily: theme.fontFamily.primary.regular,
-  fontSize: theme.fontsSizes[16],
+  fontSize: theme.fontSizes[16],
   color: theme.colors.text.primary
 }));
 
@@ -21,13 +21,13 @@ export const boldTextStyles = createStyle(({ theme }) => ({
 
 export const headingTextStyles = createStyle(({ theme }) => ({
   fontFamily: theme.fontFamily.primary.bold,
-  fontSize: theme.fontsSizes[36],
+  fontSize: theme.fontSizes[36],
   lineHeight: 44
 }));
 
 export const subheadingTextStyles = createStyle(({ theme }) => ({
   fontFamily: theme.fontFamily.primary.medium,
-  fontSize: theme.fontsSizes[24],
+  fontSize: theme.fontSizes[24],
   lineHeight: 32
 }));
 

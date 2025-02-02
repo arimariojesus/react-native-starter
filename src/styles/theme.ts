@@ -1,14 +1,14 @@
 import { borderWidths } from './borderWidths';
 import { colors } from './colors';
 import { fontFamily } from './fontFamily';
-import { fontsSizes } from './fontsSizes';
+import { fontSizes } from './fontSizes';
 import { fontsWeights } from './fontsWeights';
 import { radii } from './radii';
 import { spacings } from './spacings';
 
 export type StylePropType =
   | 'colors'
-  | 'fontsSizes'
+  | 'fontSizes'
   | 'fontsWeights'
   | 'fontFamily'
   | 'spacings'
@@ -17,7 +17,7 @@ export type StylePropType =
 
 export type CoreTheme = {
   colors: typeof colors;
-  fontsSizes: typeof fontsSizes;
+  fontSizes: typeof fontSizes;
   fontsWeights: typeof fontsWeights;
   fontFamily: typeof fontFamily;
   spacings: typeof spacings;
@@ -28,7 +28,7 @@ export type CoreTheme = {
 // TODO: add sizes values
 export const DEFAULT_THEME = {
   colors,
-  fontsSizes,
+  fontSizes,
   fontsWeights,
   fontFamily,
   spacings,

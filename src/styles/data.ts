@@ -42,7 +42,7 @@ export const STYlE_PROPS_DATA = {
   opacity: { type: 'identity', property: 'opacity' },
 
   ff: { type: 'fontFamily', property: 'fontFamily' },
-  fz: { type: 'fontsSizes', property: 'fontSize' },
+  fz: { type: 'fontSizes', property: 'fontSize' },
   fw: { type: 'fontsWeights', property: 'fontWeight' },
   lts: { type: 'identity', property: 'letterSpacing' },
   ta: { type: 'identity', property: 'textAlign' },
