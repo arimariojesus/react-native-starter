@@ -150,4 +150,12 @@ export interface CustomStyleProps {
   flex?: StyleProps['flex'];
   /** FlexDirection */
   flexDir?: StyleProps['flexDirection'];
+  /** FlexWrap */
+  flexWrap?: StyleProps['flexWrap'];
+  /** JustifyContent */
+  justifyContent?: StyleProps['justifyContent'];
+  /** AlignItems */
+  alignItems?: StyleProps['alignItems'];
+  /** Gap */
+  gap?: Spacings;
 }

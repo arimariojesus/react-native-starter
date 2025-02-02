@@ -69,5 +69,9 @@ export const STYlE_PROPS_DATA = {
 
   display: { type: 'identity', property: 'display' },
   flex: { type: 'identity', property: 'flex' },
-  flexDir: { type: 'identity', property: 'flexDirection' }
+  flexDir: { type: 'identity', property: 'flexDirection' },
+  flexWrap: { type: 'identity', property: 'flexWrap' },
+  justifyContent: { type: 'identity', property: 'justifyContent' },
+  alignItems: { type: 'identity', property: 'alignItems' },
+  gap: { type: 'identity', property: 'gap' }
 } as const satisfies Record<SystemProp, SystemPropData>;
