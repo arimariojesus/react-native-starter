@@ -4,9 +4,9 @@ import { HomeScreen } from '@/screens/Home';
 import { StackScreen } from '@/screens/StackScreen';
 import { TypographyScreen } from '@/screens/Typography';
 
-import { RootRoutesParamsList } from './types';
+import { RootStackParamList } from './types';
 
-const Stack = createNativeStackNavigator<RootRoutesParamsList>();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function StackRoutes() {
   return (

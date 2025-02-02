@@ -1,10 +1,10 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
-export type RootRoutesParamsList = {
+export type RootStackParamList = {
   Home: undefined;
   Typography: undefined;
   Stack: undefined;
 };
 
-export type RootStackScreenProps<T extends keyof RootRoutesParamsList> =
-  NativeStackScreenProps<RootRoutesParamsList, T>;
+export type RootStackScreenProps<T extends keyof RootStackParamList> =
+  NativeStackScreenProps<RootStackParamList, T>;
