@@ -1,26 +1,12 @@
-import React from 'react';
+import type { NamedStyleProps, StylesFunctionProps } from '@/styles/types';
 
-import { createStyle } from '@/styles/style-api/createStyle';
-import type { StyleProps, StylesFunctionProps } from '@/styles/types';
+import { DEFAULT_THEME } from '../theme';
 
-type NativeTarget<P extends { style?: StyleProps }> = React.ComponentType<P>;
-
-// TODO: Ensure use of different themes
-export const styled = <Target extends NativeTarget<any>>(component: Target) => {
-  return (
-    styles: StyleProps | ((props: StylesFunctionProps) => StyleProps)
-  ) => {
-    return React.forwardRef<
-      React.ElementRef<Target>,
-      React.ComponentProps<Target>
-    >((props, ref) => {
-      const resolvedStyles = createStyle(styles);
-
-      return React.createElement(component, {
-        ...props,
-        style: [resolvedStyles, props.style],
-        ref
-      });
-    });
-  };
+// TODO: get theme dynamically
+export const styled = <T extends NamedStyleProps<T> | NamedStyleProps<any>>(
+  styles: T | ((props: StylesFunctionProps) => T)
+): T => {
+  return typeof styles === 'function'
+    ? styles({ theme: DEFAULT_THEME })
+    : styles;
 };

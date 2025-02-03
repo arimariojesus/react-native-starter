@@ -1,18 +1,22 @@
-import { type SystemPropData, type SystemProp } from '@/styles/data';
 import { resolvers } from '@/styles/resolvers';
+import {
+  type SystemPropData,
+  type SystemProp,
+  STYLE_PROPS_DATA
+} from '@/styles/style-props';
 import type { CustomStyleProps, Theme } from '@/styles/types';
 import { keys } from '@/utils';
 
 interface ParseStylePropsOptions {
   styleProps: CustomStyleProps;
   theme: Theme;
-  data: Record<SystemProp, SystemPropData>;
+  data?: Record<SystemProp, SystemPropData>;
 }
 
 export function parseStyleProps({
   styleProps,
   theme,
-  data
+  data = STYLE_PROPS_DATA
 }: ParseStylePropsOptions) {
   return keys(styleProps).reduce<{
     styles: Record<string, unknown>;

@@ -1,12 +1,15 @@
 import { Box, Stack, Text } from '@/components/core';
 
-import * as S from './styles';
-
 const DecorativeBox = () => <Box p="32" bg="danger" br="12" />;
 
 export function StackScreen() {
   return (
-    <S.StackScreenContainer>
+    <Box
+      alignItems="center"
+      justifyContent="center"
+      flex={1}
+      bg="background.primary"
+    >
       <Stack gap="12">
         <Stack align="center">
           <Text preset="subheading" fw="bold">
@@ -30,6 +33,6 @@ export function StackScreen() {
           </Stack>
         </Stack>
       </Stack>
-    </S.StackScreenContainer>
+    </Box>
   );
 }

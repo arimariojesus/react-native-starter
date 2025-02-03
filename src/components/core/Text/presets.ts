@@ -1,6 +1,6 @@
 import { StyleProp, TextStyle } from 'react-native';
 
-import { createStyle } from '@/styles/style-api';
+import { styled } from '@/styles/style-api';
 
 export type TextPresets =
   | 'default'
@@ -9,36 +9,30 @@ export type TextPresets =
   | 'subheading'
   | 'caption';
 
-export const baseTextStyles = createStyle(({ theme }) => ({
-  fontFamily: theme.fontFamily.primary.regular,
-  fontSize: theme.fontSizes[16],
-  color: theme.colors.text.primary
-}));
-
-export const boldTextStyles = createStyle(({ theme }) => ({
-  fontFamily: theme.fontFamily.primary.bold
-}));
-
-export const headingTextStyles = createStyle(({ theme }) => ({
-  fontFamily: theme.fontFamily.primary.bold,
-  fontSize: theme.fontSizes[36],
-  lineHeight: 44
-}));
-
-export const subheadingTextStyles = createStyle(({ theme }) => ({
-  fontFamily: theme.fontFamily.primary.medium,
-  fontSize: theme.fontSizes[24],
-  lineHeight: 32
-}));
-
-export const captionTextStyles = createStyle(({ theme }) => ({
-  fontFamily: theme.fontFamily.primary.medium
+export const textPresets = styled(({ theme }) => ({
+  baseTextStyles: {
+    fontFamily: theme.fontFamily.primary.regular,
+    fontSize: theme.fontSizes[16],
+    color: theme.colors.text.primary
+  },
+  boldTextStyles: { fontFamily: theme.fontFamily.primary.bold },
+  headingTextStyles: {
+    fontFamily: theme.fontFamily.primary.bold,
+    fontSize: theme.fontSizes[36],
+    lineHeight: 44
+  },
+  subheadingTextStyles: {
+    fontFamily: theme.fontFamily.primary.medium,
+    fontSize: theme.fontSizes[24],
+    lineHeight: 32
+  },
+  captionTextStyles: { fontFamily: theme.fontFamily.primary.medium }
 }));
 
 export const presets: Record<TextPresets, StyleProp<TextStyle>> = {
-  default: [baseTextStyles],
-  bold: [baseTextStyles, boldTextStyles],
-  heading: [baseTextStyles, headingTextStyles],
-  subheading: [baseTextStyles, subheadingTextStyles],
-  caption: [baseTextStyles, captionTextStyles]
+  default: [textPresets.baseTextStyles],
+  bold: [textPresets.baseTextStyles, textPresets.boldTextStyles],
+  heading: [textPresets.baseTextStyles, textPresets.headingTextStyles],
+  subheading: [textPresets.baseTextStyles, textPresets.subheadingTextStyles],
+  caption: [textPresets.baseTextStyles, textPresets.captionTextStyles]
 };

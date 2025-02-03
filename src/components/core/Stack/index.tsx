@@ -1,7 +1,7 @@
 import { forwardRef } from 'react';
 import { View } from 'react-native';
 
-import { Box, type BoxProps } from '@/components/core';
+import { Box, type BoxProps } from '@/components/core/Box';
 import type { Spacings, StyleProps } from '@/styles/types';
 
 interface StackProps extends BoxProps {

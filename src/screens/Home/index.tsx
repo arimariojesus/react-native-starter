@@ -1,9 +1,7 @@
 import { Button } from 'react-native';
 
-import { Text } from '@/components/core';
+import { Box, Text } from '@/components/core';
 import { RootStackScreenProps } from '@/routes/types';
-
-import * as S from './styles';
 
 type HomeScreenProps = RootStackScreenProps<'Home'>;
 
@@ -17,11 +15,16 @@ export function HomeScreen({ navigation }: HomeScreenProps) {
   };
 
   return (
-    <S.HomeContainer>
+    <Box
+      alignItems="center"
+      justifyContent="center"
+      flex={1}
+      bg="background.primary"
+    >
       <Text preset="heading">Hello World</Text>
 
       <Button onPress={handleTypographyPress} title="Typography" />
       <Button onPress={handleStackPress} title="Stack" />
-    </S.HomeContainer>
+    </Box>
   );
 }

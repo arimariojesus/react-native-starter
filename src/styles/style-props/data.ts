@@ -8,7 +8,7 @@ export type SystemPropData = {
   property: keyof StyleProps;
 };
 
-export const STYlE_PROPS_DATA = {
+export const STYLE_PROPS_DATA = {
   m: { type: 'spacings', property: 'margin' },
   mt: { type: 'spacings', property: 'marginTop' },
   mb: { type: 'spacings', property: 'marginBottom' },

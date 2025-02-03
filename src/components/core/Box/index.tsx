@@ -1,7 +1,6 @@
 import React, { forwardRef } from 'react';
 import { View, type ViewProps } from 'react-native';
 
-import { STYlE_PROPS_DATA } from '@/styles/data';
 import { parseStyleProps } from '@/styles/style-props';
 import { extractStyleProps } from '@/styles/style-props';
 import { DEFAULT_THEME } from '@/styles/theme';
@@ -14,8 +13,7 @@ export const Box = forwardRef<View, BoxProps>((props, ref) => {
   const { styleProps, remainingProps } = extractStyleProps(others);
   const parsedStyleProps = parseStyleProps({
     styleProps,
-    theme: DEFAULT_THEME, // TODO: get theme from context
-    data: STYlE_PROPS_DATA
+    theme: DEFAULT_THEME // TODO: get theme from context
   });
 
   const mergedStyles = [parsedStyleProps.styles, styleOverride];

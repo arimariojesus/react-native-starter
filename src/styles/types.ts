@@ -25,6 +25,9 @@ export type PathValue<T, P extends string> = P extends keyof T
     : never;
 
 export type StyleProps = ViewStyle & TextStyle & ImageStyle;
+export type NamedStyleProps<T> = {
+  [P in keyof T]: ViewStyle | TextStyle | ImageStyle;
+};
 
 export type StylesFunctionProps = {
   theme: Theme;
